@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   output: 'export',
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
+  // sassOptions: {
+  //   includePaths: [path.join(__dirname, 'styles')],
+  // },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -25,8 +25,6 @@ module.exports = {
       },
     ],
   },
-    experimental: {
-    missingSuspenseWithCSRBailout: false,
-    serverComponentsExternalPackages: ['@next/third-parties'],
-  },
-}
+
+    //serverComponentsExternalPackages: ['@next/third-parties'],
+  };
