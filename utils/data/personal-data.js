@@ -13,6 +13,6 @@ export const personalData = {
   leetcode: "https://leetcode.com/u/4ZJk1yINN0/",
   insta: "https://www.instagram.com/1brh9m/",
   Telegram:'https://t.me/IbrahimAbdAlrasolSS',
-  devUsername: "said7388",
+  devUsername: "ibrahimabdalrasol-ss",
   resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
 }
