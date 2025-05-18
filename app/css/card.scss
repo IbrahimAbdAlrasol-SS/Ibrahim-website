@@ -1,5 +1,6 @@
 .glow-container {
-  --spread: 60;
+  --spread: 50;
+  
 }
 
 .glow-card {
@@ -66,7 +67,7 @@
   transition: opacity 1s;
 }
 
-.glow-card::after {
+.glow-card1::after {
   --bg-size: 100%;
   content: "";
   pointer-events: none;

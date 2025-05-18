@@ -2,19 +2,9 @@ export const educations = [
   {
     id: 1,
     title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    duration: "2023 - Present",
+    institution: "Computer Science / Cyber ​​Security - Al-Mustansiriya University",
+    description: "I am currently pursuing a Bachelor's degree in Computer Science with a focus on Cyber Security at Al-Mustansiriya University. My studies encompass a wide range of topics, including programming, network security, and ethical hacking. I am dedicated to gaining a comprehensive understanding of the field and applying my knowledge to real-world challenges.",
   },
-  {
-    id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
-  },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
-  }
+  
 ]

@@ -67,6 +67,7 @@ function Education() {
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
+                          <p className="text-xs xs:text-base text-[#16f2b3]">{education.description}</p>
                         </div>
                       </div>
                     </div>

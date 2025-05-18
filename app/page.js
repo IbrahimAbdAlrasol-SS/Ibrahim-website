@@ -7,6 +7,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
+import GlowCardWrapper from './components/helper/GlowCardWrapper';
 
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
@@ -22,11 +23,15 @@ async function getData() {
   return filtered;
 };
 
+
 export default async function Home() {
   const blogs = await getData();
 
   return (
     <div suppressHydrationWarning >
+     <GlowCardWrapper identifier="hero-card">
+  {
+    <>
       <HeroSection />
       <AboutSection />
       <Experience />
@@ -35,6 +40,10 @@ export default async function Home() {
       <Education />
       <Blog blogs={blogs} />
       <ContactSection />
+    </>
+  }
+</GlowCardWrapper>
+
     </div>
   )
 };
