@@ -12,16 +12,12 @@ const GlowCard = dynamic(
   }
 );
 
-const GlowCardWrapper = ({ children, identifier , childr}) => {
+const GlowCardWrapper = ({ children, identifier}) => {
   return (
     <div>
 
 
-       // مفروض المشكله هنا حاول تحلها , باختصار شيل ssr 
-       // ولا تخليها تضرب الصفحه
-      <GlowCard identifier= {identifier}>
-        {childr}
-      </GlowCard>
+    
       {children}
 
 

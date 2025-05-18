@@ -1,49 +1,13 @@
-import { personalData } from "@/utils/data/personal-data";
-import AboutSection from "./components/homepage/about";
-import Blog from "./components/homepage/blog";
-import ContactSection from "./components/homepage/contact";
-import Education from "./components/homepage/education";
-import Experience from "./components/homepage/experience";
-import HeroSection from "./components/homepage/hero-section";
-import Projects from "./components/homepage/projects";
-import Skills from "./components/homepage/skills";
-import GlowCardWrapper from './components/helper/GlowCardWrapper';
+'use client';
 
-async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+import dynamic from 'next/dynamic';
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
+// Dynamic import للمكونات التي تستخدم مكتبات تابعة للعميل
+const HomeContent = dynamic(() => import('./components/homepage/HomeContent'), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 
-  const data = await res.json();
-
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
-  return filtered;
-};
-
-
-export default async function Home() {
-  const blogs = await getData();
-
-  return (
-    <div suppressHydrationWarning >
-     <GlowCardWrapper identifier="hero-card">
-  {
-    <>
-      <HeroSection />
-      <AboutSection />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Education />
-      <Blog blogs={blogs} />
-      <ContactSection />
-    </>
-  }
-</GlowCardWrapper>
-
-    </div>
-  )
-};
+export default function Home() {
+  return <HomeContent />;
+}

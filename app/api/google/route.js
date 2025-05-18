@@ -6,7 +6,7 @@ export async function POST(request) {
   const secret_key = process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY;
 
   try {
-    const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${reqBody.token}`;
+    const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${reqBody.}`;
 
     const res = await axios.post(url);
     if (res.data.success) {
