@@ -14,5 +14,5 @@ export const personalData = {
   insta: "https://www.instagram.com/1brh9m/",
   Telegram:'https://t.me/IbrahimAbdAlrasolSS',
   devUsername: "ibrahimabdalrasol-ss",
-  resume: ""
+  resume: "https://t.me/IbrahimAbdAlrasolSS"
 }
