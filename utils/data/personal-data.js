@@ -14,5 +14,5 @@ export const personalData = {
   insta: "https://www.instagram.com/1brh9m/",
   Telegram:'https://t.me/IbrahimAbdAlrasolSS',
   devUsername: "ibrahimabdalrasol-ss",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: ""
 }
