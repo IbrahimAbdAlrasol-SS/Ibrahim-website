@@ -10,7 +10,6 @@ import "./css/globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Dynamic Import للمكونات التي تحتاج إلى window/document
 const ToastContainer = dynamic(
   () => import('react-toastify').then((mod) => mod.ToastContainer),
   { ssr: false }
